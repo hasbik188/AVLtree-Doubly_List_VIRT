@@ -207,7 +207,7 @@ void InsertInTree(TNode*& root, char let, int num, bool& h) {
     else AddToList(root->list);
 }
 
-void BalanceL(TNode*& root, bool h){
+void BalanceL(TNode*& root, bool& h){
     if (root->balance == -1)
         root->balance = 0;
     else if (root->balance == 0) {
@@ -246,7 +246,7 @@ void BalanceL(TNode*& root, bool h){
     }
 }
 
-void BalanceR(TNode*& root, bool h){
+void BalanceR(TNode*& root, bool& h){
     if (root->balance == 1)
         root->balance = 0;
     else if (root->balance == 0) {
